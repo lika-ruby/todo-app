@@ -10,7 +10,6 @@ export const Container = styled.div`
   width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
-  outline: 1px solid red;
 `
 
 export const Header = styled.header`
