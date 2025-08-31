@@ -1,10 +1,12 @@
 import { Component } from "react";
 import { TodoItem } from "../TodoItem/TodoItem.jsx";
-import { List } from "./TodoList.js";
+import { List, Text } from "./TodoList.js";
 
 export class TodoList extends Component {
   render() {
-    return (
+    return this.props.todos.length === 0 ? (
+      <Text>You don't have todos...</Text>
+    ) : (
       <List>
         {this.props.todos.map((todo) => (
           <TodoItem
